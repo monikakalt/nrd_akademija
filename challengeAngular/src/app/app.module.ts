@@ -8,6 +8,7 @@ import { AppRoutingModule } from './shared/app.routing';
 import { NavComponent } from './shared/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ChallengeComponent } from './challenge/challenge.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { RegisterComponent } from './register/register.component';
     HomeComponent,
     NavComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ChallengeComponent
   ],
   imports: [
     BrowserModule,
