@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  constructor() {}
+
+  public openLogin() {
+    //show modal
+    console.log("kazkas vyksta");
+
+ }
+
+ public openRegister() {
+  //show modal
+  console.log("kazkas vyksta");
+
+}
 }
