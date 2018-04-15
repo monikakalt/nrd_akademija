@@ -9,6 +9,7 @@ import { NavComponent } from './shared/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ChallengeComponent } from './challenge/challenge.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ChallengeComponent } from './challenge/challenge.component';
     NavComponent,
     LoginComponent,
     RegisterComponent,
-    ChallengeComponent
+    ChallengeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

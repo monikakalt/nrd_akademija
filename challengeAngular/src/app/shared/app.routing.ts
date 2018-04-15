@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from '../home/home.component';
 import { LoginComponent } from '../login/login.component';
 import { RegisterComponent } from '../register/register.component'
+import { AboutComponent } from '../about/about.component'
 
 @NgModule({
   imports: [
@@ -11,6 +12,7 @@ import { RegisterComponent } from '../register/register.component'
           { path: '' , component: HomeComponent},
           { path: 'login' , component: LoginComponent},
           { path: 'register' , component: RegisterComponent},
+          { path: 'about' , component: AboutComponent},
 
           // otherwise redirect to home
           { path: '**', redirectTo: '' }
