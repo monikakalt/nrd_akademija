@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -15,6 +15,7 @@ import { UserService } from './services/user.service';
 import { ChallengeService } from './services/challenge.service';
 import { AuthenticationService } from './services/authentication.service';
 import { HttpModule } from '@angular/http';
+import { ChallengeCategoriesFilterPipe } from './pipes/challenge-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -25,11 +26,13 @@ import { HttpModule } from '@angular/http';
     ChallengeComponent,
     AboutComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ChallengeCategoriesFilterPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     AppRoutingModule
   ],

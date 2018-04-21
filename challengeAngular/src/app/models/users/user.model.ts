@@ -3,8 +3,7 @@ import { ChallengeModel } from '../challenges/challenge.model';
 
 export class UserModel {
     id: Number;
-    firstName: String;
-    lastName: String;
+    fullName: String;
     username: String;
     email: String;
 
