@@ -1,0 +1,23 @@
+<div >
+  <table class="table">
+      <thead>
+          <tr>
+              <!-- <th *ngFor="let h of employeeHeaders">{{h.label}}</th> -->
+              <th></th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let ch of challenges$ | async; let ind = index;">
+              <th>{{ind+1}}</th>
+              <th>{{ch.title}}</th>
+              <img src="{{ch.imgUrl}}">
+              <th></th>
+              <th>
+                  <!-- <button [disabled]="ch.inventory.length === 0" class="btn btn-outline-primary" (click)="open(modal, ind)">
+                      <i class="fa fa-search"></i> Check details</button> -->
+              </th>
+          </tr>
+      </tbody>
+
+  </table>
+</div>

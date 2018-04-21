@@ -11,6 +11,10 @@ import { ChallengeComponent } from './components/challenge/challenge.component';
 import { AboutComponent } from './components/about/about.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { UserService } from './services/user.service';
+import { ChallengeService } from './services/challenge.service';
+import { AuthenticationService } from './services/authentication.service';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -26,9 +30,14 @@ import { FooterComponent } from './shared/footer/footer.component';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    UserService,
+    ChallengeService,
+    AuthenticationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
