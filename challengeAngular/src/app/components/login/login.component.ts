@@ -37,7 +37,6 @@ import { Http } from '@angular/http';
     </div>
     </div>
     </div>
-
     <div class="loginForm text-center" *ngIf="authenticated">
       <a (click)="logout()">Logout</a>
     </div>
@@ -66,6 +65,7 @@ export class LoginComponent {
   }
 
   submitForm(value: any){
+    console.log("atejo");
     // Once the form is submitted and we get the users email and password we’ll format our request based on the Auth0 API.
     // let form = {
     //   'client_id' : 'YOUR-AUTH0-CLIENTID',
