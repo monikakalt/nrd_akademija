@@ -26,10 +26,15 @@ export class AddChallengeComponent implements OnInit {
 
   }
 
+  ngOnInit() { }
+
    addChallenge(value: any):void{
     console.log('Reactive Form Data:  ')
     console.log(value);
   }
 
-  ngOnInit() { }
+  //TO DO check if user added correct img url:
+  checkUrl() {}
+
+
 }
