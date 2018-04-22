@@ -1,5 +1,5 @@
 <div class=" container">
-    <button class="challenge btn btn-primary">Add challenge</button>
+  <button class="challenge btn btn-primary" data-toggle="modal" data-target="#challengeModal">Add challenge</button>
   <table class="table">
       <thead>
           <tr>
@@ -12,13 +12,13 @@
               <th>{{ind+1}}</th>
               <th>{{ch.title}}</th>
               <img src="{{ch.imgUrl}}">
-              <th></th>
-              <th>
-                  <!-- <button [disabled]="ch.inventory.length === 0" class="btn btn-outline-primary" (click)="open(modal, ind)">
-                      <i class="fa fa-search"></i> Check details</button> -->
-              </th>
           </tr>
       </tbody>
 
   </table>
+</div>
+
+
+<div id="challengeModal" class="modal fade" role="dialog">
+  <add-challenge></add-challenge>
 </div>

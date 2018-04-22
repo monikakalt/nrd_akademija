@@ -16,6 +16,7 @@ import { ChallengeService } from './services/challenge.service';
 import { AuthenticationService } from './services/authentication.service';
 import { HttpModule } from '@angular/http';
 import { ChallengeCategoriesFilterPipe } from './pipes/challenge-filter.pipe';
+import { AddChallengeComponent } from './components/challenge/add-challenge.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ChallengeCategoriesFilterPipe } from './pipes/challenge-filter.pipe';
     AboutComponent,
     NavbarComponent,
     FooterComponent,
-    ChallengeCategoriesFilterPipe
+    ChallengeCategoriesFilterPipe,
+    AddChallengeComponent
   ],
   imports: [
     BrowserModule,
