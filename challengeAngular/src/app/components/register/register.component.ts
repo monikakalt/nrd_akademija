@@ -4,7 +4,7 @@ import { UserModel } from '../../models/users/user.model';
 import { AuthenticationService } from '../../services/authentication.service';
 import { UserService } from '../../services/user.service';
 import { Observable } from 'rxjs/';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
     templateUrl: './register.component.html',
@@ -18,11 +18,11 @@ export class RegisterComponent {
   constructor(formBuilder: FormBuilder) {
 
     this.registerForm = formBuilder.group({
-      'fullName' : "",
-      'username': "",
-      'email' : "",
-      'password' : "",
-      'confirmPassword' : ""
+      'fullName' :  [null, Validators.required],
+      'username':  [null, Validators.required],
+      'email' :  [null, Validators.required],
+      'password' : [null, Validators.required],
+      'confirmPassword' :  [null, Validators.required],
     })
 
   }
